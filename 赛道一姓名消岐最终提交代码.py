@@ -153,7 +153,7 @@ def get_org(co_authors, author_name):
     return ''
 
 
-# 3. 无监督聚类（根据合作者和机构TFIDF进行相似度聚类） 线上得分：0.2637
+# 3. 无监督聚类（根据合作者和机构TFIDF聚类)
 import random
 from sklearn.metrics.pairwise import pairwise_distances
 from sklearn.feature_extraction.text import TfidfVectorizer
