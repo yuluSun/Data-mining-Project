@@ -7,8 +7,8 @@ plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 
-valid_row_data_path = 'E:\\数据挖掘\\1\\sna_data\\sna_valid_author_raw.json'
-valid_pub_data_path = 'E:\\数据挖掘\\1\\sna_data\\sna_valid_pub.json'
+valid_row_data_path = 'E:\\数据挖掘\\sna_data\\sna_valid_author_raw.json'
+valid_pub_data_path = 'E:\\数据挖掘\\sna_data\\sna_valid_pub.json'
 
 # 合并数据
 validate_pub_data = json.load(open(valid_pub_data_path, 'r', encoding='utf-8'))
@@ -119,16 +119,7 @@ for author in validate_data:
             # print(org)
         
     break
-'''
-作者名存在不一致的情况：
-1、大小写
-2、姓、名顺序不一致
-3、下划线、横线
-4、简写与不简写
-5、姓名有三个字的表达: 名字是否分开
-同理：机构的表达也存在不一致的情况
-因此：需要对数据做相应的预处理统一表达
-'''
+
 
 import re
 # 数据预处理
